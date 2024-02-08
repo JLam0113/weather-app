@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <form id="locationForm">
+            <div class="form-group">
+                <label for="location-name" class="col-form-label">Title:</label>
+                <input type="text" class="form-control" id="location">
+            </div>
+            <span class="error" id="error"></span>
+            <input type="submit" class="btn btn-default" value="FIND">
+        </form>
+        <div class="weatherDataContainer">
+            <h1 id="city"></h1>
+            <div class="dataBox">
+                <h3>Temperature:&nbsp</h3><span id="temp"></span>
+                <br>
+                <h3>Humidity:&nbsp</h3><span id="humidity"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="weather.js"></script>
+</body>
+</html>
